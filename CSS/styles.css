@@ -67,8 +67,10 @@ span {
 }
 .menu-navigation {
    display: flex;
+   align-items: center;
 }
 .menu-logo {
+   display: inline-block;
    margin-right: 77px;
 
    font-family: 'Raleway', sans-serif;
@@ -80,7 +82,9 @@ span {
 .menu-items {
    display: flex;
 
+   padding: 24px 0px;
    font-weight: 700;
+   color: var(--title-color);
 }
 .menu-list {
    margin: 0px 40px 0px 0px;
@@ -89,19 +93,17 @@ span {
    margin: 0px;
 }
 .menu-item {
-   padding: 24px 0px;
-
-   color: var(--title-color);
+   color: var(--text-color);
 }
 .menu-item:hover,
 .menu-item:focus {
    color: var(--primery-band);
 }
 .menu-contacts {
+   display: flex;
+   margin-left: auto;
 }
-.menu-email {
-   color: inherit;
-}
+.menu-email,
 .menu-tel {
    color: inherit;
 }
@@ -114,27 +116,23 @@ span {
    color: var(--primery-band);
 }
 /*============ HERO ================== */
-.menu-logo,
-.menu-item,
-.content-title,
-.list-title,
-.doing-title,
-.team-title,
-.team-name,
-.portfolio-title {
-   color: var(--title-color);
-}
 
-.content {
+.hero-section {
+   background-color: #2E2F42;
+}
+.hero-container {
    text-align: center;
 }
-.content-title {
+.hero-title {
    font-size: 56px;
    font-weight: 700;
    line-height: 1.07;
    color: #ffffff;
 }
-.content-button {
+.hero-button {
+   padding: 16px 32px;
+   border-radius: 4px;
+
    font-family: 'Roboto', sans-serif;
    font-size: 16px;
    line-height: 1.18;
@@ -143,15 +141,25 @@ span {
    background-color: var(--primery-band);
    cursor: pointer;
 }
-.content-button:hover,
-.content-button:focus {
+.hero-button:hover,
+.hero-button:focus {
    background-color: var(--button-hover-color);
 }
+/*==================== LIST ======================*/
+/*=========================== DOING ====================*/
+/*=========================== TEAM ============================*/
 .team {
    background-color: var(--light-color);
 }
 .team-item {
    background-color: #ffffff;
+}
+.list-title,
+.doing-title,
+.team-title,
+.team-name,
+.portfolio-title {
+   color: var(--title-color);
 }
 .list-title,
 .team-name,
@@ -194,7 +202,6 @@ span {
 .footer-text {
    color: #ffffff;
 }
- .content,
  footer {
    background-color: #2E2F42;
 }
