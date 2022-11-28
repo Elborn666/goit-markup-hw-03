@@ -1,4 +1,25 @@
- /*text-color  #434455 */
+/* Обнуление стилей */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+   margin: 0;
+   padding: 0;
+}
+ul {
+   list-style: none;
+}
+a {
+   text-decoration: none;
+}
+
+/* root */
+
+/*text-color  #434455 */
  /*primery-band + buttons #4D5AE5  */
  /*menu+title-color #2E2F42  */
  /*footer-color #E7E9FC  */
@@ -9,6 +30,9 @@
     --title-color: #2E2F42;
     --footer-color: #E7E9FC;
  }
+
+/* Общие стили */
+
  body {
     font-family: 'Roboto', sans-serif;
     line-height: 1.5;
@@ -18,22 +42,8 @@
  span {
     color: var(--primery-band);
  }
- ul {
-    list-style: none;
- }
- a {
-    text-decoration: none;
- }
- .menu-logo,
- .menu-item,
- .content-title,
- .list-title,
- .doing-title,
- .team-title,
- .team-name,
- .portfolio-title {
-    color: var(--title-color);
- }
+
+ /*================== MENU ================== */
  .menu-email,
  .menu-tel {
     color: inherit;
@@ -62,26 +72,45 @@
  .menu-list {
     font-weight: 700;
  }
+ /*============ HERO ================== */
  .content {
-    text-align: center;
+   text-align: center;
+}
+.content-title {
+   font-size: 56px;
+   font-weight: 700;
+   line-height: 1.07;
+   color: #ffffff;
+}
+.content-button {
+   line-height: 1.18;
+   letter-spacing: 0.04em;
+   color: #ffffff;
+   background-color: var(--primery-band);
+   cursor: pointer;
+}
+.content-button:hover,
+.content-button:focus {
+   background-color: #404BBF;
+}
+ /* LIST */
+ /* DOING */
+ /* TEAM */
+ /* PORTFOLIO */
+ /* FOOTER */
+
+ .menu-logo,
+ .menu-item,
+ .content-title,
+ .list-title,
+ .doing-title,
+ .team-title,
+ .team-name,
+ .portfolio-title {
+    color: var(--title-color);
  }
- .content-title {
-    font-size: 56px;
-    font-weight: 700;
-    line-height: 1.07;
-    color: #ffffff;
- }
- .content-button {
-    line-height: 1.18;
-    letter-spacing: 0.04em;
-    color: #ffffff;
-    background-color: var(--primery-band);
-    cursor: pointer;
- }
- .content-button:hover,
- .content-button:focus {
-    background-color: #404BBF;
- }
+
+ 
  .list-title,
  .team-name,
  .portfolio-title {
