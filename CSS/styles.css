@@ -1,0 +1,113 @@
+ /*text-color  #434455 */
+ /*primery-band + buttons #4D5AE5  */
+ /*menu+title-color #2E2F42  */
+ /*footer-color #E7E9FC  */
+
+ :root {
+    --text-color: #434455;
+    --primery-band: #4D5AE5;
+    --title-color: #2E2F42;
+    --footer-color: #E7E9FC;
+ }
+ body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--text-color);
+ }
+ span {
+    color: var(--primery-band);
+ }
+ ul {
+    list-style: none;
+ }
+ a {
+    text-decoration: none;
+ }
+ .menu-logo,
+ .menu-item,
+ .content-title,
+ .list-title,
+ .doing-title,
+ .team-title,
+ .team-name,
+ .portfolio-title {
+    color: var(--title-color);
+ }
+ .menu-email,
+ .menu-tel {
+    color: inherit;
+ }
+ .menu-item:hover,
+ .menu-item:focus {
+    color: var(--primery-band);
+ }
+ .menu-logo {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+    text-transform: uppercase;
+ }
+ .menu-item:hover,
+ .menu-item:focus {
+    color: var(--primery-band);
+ }
+ .menu-email:hover,
+ .menu-email:focus {
+    color: var(--primery-band);
+ }
+ .menu-tel:hover,
+ .menu-tel:focus {
+    color: var(--primery-band);
+ }
+ .menu-list {
+    font-weight: 700;
+ }
+ .content {
+    text-align: center;
+ }
+ .content-title {
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 1.07;
+    color: #ffffff;
+ }
+ .content-button {
+    line-height: 1.18;
+    letter-spacing: 0.04em;
+    color: #ffffff;
+    background-color: var(--primery-band);
+    cursor: pointer;
+ }
+ .content-button:hover,
+ .content-button:focus {
+    background-color: #404BBF;
+ }
+ .list-title,
+ .team-name,
+ .portfolio-title {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+ }
+ .doing-title,
+ .team-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    text-align: center;
+    text-transform: capitalize;
+ }
+ .filter-button:hover,
+ .filter-button:focus {
+    background-color: var(--primery-band);
+ }
+ .footer-logo,
+ .footer-text {
+    color: #ffffff;
+ }
+ .content,
+ footer {
+    background-color: #2E2F42;
+ }
