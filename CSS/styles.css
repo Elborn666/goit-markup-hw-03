@@ -1,4 +1,4 @@
-/* Обнуление стилей */
+/*=================== Обнуление стилей ======================*/
 
 h1,
 h2,
@@ -12,66 +12,105 @@ p {
 }
 ul {
    list-style: none;
+   padding: 0;
+   margin: 0;
 }
 a {
    text-decoration: none;
+   padding: 0;
+   margin: 0;
 }
 
-/* root */
+/*=============== root ============================*/
 
 /*text-color  #434455 */
  /*primery-band + buttons #4D5AE5  */
  /*menu+title-color #2E2F42  */
  /*footer-color #E7E9FC  */
 
- :root {
+:root {
     --text-color: #434455;
     --primery-band: #4D5AE5;
     --title-color: #2E2F42;
     --footer-color: #E7E9FC;
- }
+}
 
-/* Общие стили */
+/*================ Общие стили =================*/
 
- body {
+body {
     font-family: 'Roboto', sans-serif;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--text-color);
- }
- span {
+}
+span {
     color: var(--primery-band);
- }
-
+}
+.container {
+   width: 1158px;
+   margin: 0 auto;
+   padding: 0px 15px;
+}
+.section {
+   padding: 120px 0px;
+}
  /*================== MENU ================== */
- .menu-email,
- .menu-tel {
+
+.menu-container {
+   display: flex;
+   align-items: center;
+}
+.menu-navigation {
+   display: flex;
+}
+.menu-logo {
+   display: inline-block;
+   margin-right: 77px;
+   padding-top: 24px;
+
+   font-family: 'Raleway', sans-serif;
+   font-weight: 800;
+   text-transform: uppercase;
+   color: var(--title-color);
+}
+.menu-items {
+   display: flex;
+
+   font-weight: 700;
+}
+.menu-list {
+   margin: 0px 40px 0px 0px;
+}
+.menu-list:last-child {
+   margin: 0px;
+}
+.menu-item {
+   display: inline-block;
+   padding: 24px 0px;
+
+   color: var(--title-color);
+}
+.menu-item:hover,
+.menu-item:focus {
+    color: var(--primery-band);
+}
+.menu-contacts {
+   display: flex;
+   margin-left: auto;
+}
+.menu-email,
+.menu-tel {
     color: inherit;
- }
- .menu-item:hover,
- .menu-item:focus {
+}
+.menu-email:hover,
+.menu-email:focus {
     color: var(--primery-band);
- }
- .menu-logo {
-    font-family: 'Raleway', sans-serif;
-    font-weight: 800;
-    text-transform: uppercase;
- }
- .menu-item:hover,
- .menu-item:focus {
+}
+.menu-tel:hover,
+.menu-tel:focus {
     color: var(--primery-band);
- }
- .menu-email:hover,
- .menu-email:focus {
-    color: var(--primery-band);
- }
- .menu-tel:hover,
- .menu-tel:focus {
-    color: var(--primery-band);
- }
- .menu-list {
-    font-weight: 700;
- }
+}
+    
  /*============ HERO ================== */
  .content {
    text-align: center;
@@ -99,8 +138,6 @@ a {
  /* PORTFOLIO */
  /* FOOTER */
 
- .menu-logo,
- .menu-item,
  .content-title,
  .list-title,
  .doing-title,
