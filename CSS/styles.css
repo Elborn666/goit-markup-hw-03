@@ -58,7 +58,7 @@ span {
   padding: 0px 15px;
 }
 .section {
-  padding: 120px 0px;
+  padding-top: 120px;
 }
 /*================== MENU ================== */
 .menu-container {
@@ -131,52 +131,125 @@ span {
 }
 .hero-button {
    padding: 16px 32px;
-   border-radius: 4px;
-
+   
    font-family: 'Roboto', sans-serif;
    font-size: 16px;
    line-height: 1.18;
    letter-spacing: 0.04em;
    color: #ffffff;
    background-color: var(--primery-band);
+   
    cursor: pointer;
+   border: 1px solid var(--primery-band);
+   border-radius: 4px;
+
 }
 .hero-button:hover,
 .hero-button:focus {
    background-color: var(--button-hover-color);
 }
 /*==================== LIST ======================*/
-/*=========================== DOING ====================*/
-/*=========================== TEAM ============================*/
-.team {
-   background-color: var(--light-color);
+.list-items {
+   display: flex;
 }
-.team-item {
-   background-color: #ffffff;
+.list-item {
+   margin-right: 24px;
 }
-.list-title,
-.doing-title,
-.team-title,
-.team-name,
-.portfolio-title {
-   color: var(--title-color);
+.list-item:last-child {
+   margin-right: 0px;
 }
-.list-title,
-.team-name,
-.portfolio-title {
+.list-title {
+   margin-bottom: 8px;
+
    font-weight: 700;
    font-size: 20px;
    line-height: 1.2;
    letter-spacing: 0.02em;
+   color: var(--title-color);
 }
-.doing-title,
-.team-title {
+.list-text {
+   line-height: 1.5;
+}
+/*=========================== DOING ====================*/
+.doing-section {
+   padding-bottom: 120px;
+}
+.doing-title {
+   margin-bottom: 72px;
+
    font-weight: 700;
    font-size: 36px;
    line-height: 1.11;
    letter-spacing: 0.02em;
    text-align: center;
    text-transform: capitalize;
+   color: var(--title-color);
+}
+.doing-items {
+   display: flex;
+   background-color: var(--primery-band);
+}
+.doing-item {
+   margin-right: 24px;
+   
+}
+.doing-item:last-child {
+   margin-right: 0px;
+}
+/*=========================== TEAM ============================*/
+.team-section {
+   padding-bottom: 120px;
+
+   background-color: var(--light-color);
+}
+.team-title {
+   margin-bottom: 72px;
+
+   font-weight: 700;
+   font-size: 36px;
+   line-height: 1.11;
+   letter-spacing: 0.02em;
+   text-align: center;
+   text-transform: capitalize;
+   color: var(--title-color);
+}
+.team-items {
+   display: flex;
+}
+.team-item {
+   margin-right: 24px;
+   width: calc((100%-72px)/4);
+
+   text-align: center;
+   background-color: #ffffff;
+
+   border-radius: 0px 0px 4px 4px;
+   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+.team-item:last-child {
+   margin-right: 0px;
+}
+.team-name {
+   margin: 32px 0px 8px 0px;
+
+   font-weight: 700;
+   font-size: 20px;
+   line-height: 1.2;
+   letter-spacing: 0.02em;
+   color: var(--title-color);
+}
+.team-position {
+   margin-bottom: 32px;
+}
+/*=========================== PORTFOLIO ============================*/
+.portfolio-title {
+   color: var(--title-color);
+}
+.portfolio-title {
+   font-weight: 700;
+   font-size: 20px;
+   line-height: 1.2;
+   letter-spacing: 0.02em;
 }
 .filter-button {
    font-family: 'Roboto', sans-serif;
@@ -192,6 +265,11 @@ span {
    color: #ffffff;
    background-color: var(--button-hover-color);
 }
+/*=========================== FOOTER ============================*/
+.footer-section {
+   padding: 100px 0px;
+   background-color: #2E2F42;
+}
 .footer-logo{
    font-family: 'Raleway', sans-serif;
    font-size: 18px;
@@ -200,8 +278,9 @@ span {
    color: #ffffff;
 }
 .footer-text {
+   width: 284px;
+   margin-top: 16px;
+
+   line-height: 1.5;
    color: #ffffff;
-}
- footer {
-   background-color: #2E2F42;
 }
