@@ -299,7 +299,6 @@ img {
 .portfolio-cards {
    display: flex;
    flex-wrap: wrap;
-   background-color: #31D0AA;
 }
 .portfolio-card {
    margin-bottom: 48px;
