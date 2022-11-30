@@ -20,11 +20,6 @@ a {
    padding: 0;
    margin: 0;
 }
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
 /*=============== root ============================*/
 
 /*text-color  #434455 */
@@ -76,7 +71,7 @@ img {
 }
 /*menu-shadow используеться в портфолио*/
 .menu-shadow {
-   border-bottom: 2px solid var(--subtle-color);
+   box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 .menu-navigation {
    display: flex;
@@ -106,6 +101,7 @@ img {
    margin: 0px;
 }
 .menu-item {
+   line-height: 1.5;
    color: var(--text-color);
 }
 .menu-item:hover,
@@ -137,10 +133,18 @@ img {
    text-align: center;
 }
 .hero-title {
+   max-width: 492px;
+   margin: 0 auto;
+   padding-top: 192px;
+   margin-bottom: 48px;
+
    font-size: 56px;
    font-weight: 700;
    line-height: 1.07;
    color: #ffffff;
+}
+.hero-form {
+   padding-bottom: 192px;
 }
 .hero-button {
    padding: 16px 32px;
@@ -155,7 +159,6 @@ img {
    cursor: pointer;
    border: 1px solid var(--primery-band);
    border-radius: 4px;
-
 }
 .hero-button:hover,
 .hero-button:focus {
@@ -167,6 +170,7 @@ img {
 }
 .list-item {
    margin-right: 24px;
+   flex-basis: calc((100%-72)/4);
 }
 .list-item:last-child {
    margin-right: 0px;
@@ -256,9 +260,15 @@ img {
    padding-bottom: 120px;
 }
 .portfolio-title {
+   padding: 32px 16px;
+
+   border: 0.5px solid #F4F4FD;;
+   border-top: none;
    color: var(--title-color);
 }
-.portfolio-title {
+.portfolio-subtitle {
+   margin-bottom: 8px;
+
    font-weight: 700;
    font-size: 20px;
    line-height: 1.2;
@@ -276,7 +286,7 @@ img {
    margin-right: 0px;
 }
 .portfolio-button {
-   padding: 8px 16px;
+   padding: 12px 24px;
 
    font-family: 'Roboto', sans-serif;
    font-weight: 700;
@@ -303,21 +313,12 @@ img {
    margin-bottom: 48px;
    margin-right: 24px; 
    width: 360px;
-   
-   border: 0.5px solid #F4F4FD;
 }
 .portfolio-card:nth-child(3n) {
    margin-right: 0px;
 }
 .portfolio-card:nth-last-child(-n+3) {
    margin-bottom: 0px;
-}
-.portfolio-title{
-   margin: 32px 0px 8px 0px;
-   padding-left: 16px;
-}
-.portfolio-text {
-   padding: 0px 0px 32px 16px;
 }
 /*=========================== FOOTER ============================*/
 .footer-section {
